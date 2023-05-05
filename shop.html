@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Online service | Products</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<!-- <link rel="icon" href=" assets/admin/img/icon.ico" type="image/x-icon"/> -->
+ <link rel="stylesheet" href=" assets/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href=" assets/admin/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href=" assets/admin/css/font-awesome.min.css">
+<link rel="stylesheet" href=" assets/admin/css/lato/latofonts.css">
+ <link rel="stylesheet" href=" assets/admin/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href=" assets/admin/css/sweetalert.css">
+<link rel="stylesheet" href=" assets/admin/css/jquery-ui.css">
+<link rel="stylesheet" href=" assets/admin/css/style.min.css">	
+</head>
+<body>	
+	<div class="wrapper">		
+	<div class="main-header" data-background-color="purple">
+         <!-- Logo Header -->
+         <div class="logo-header">
+            
+            <a href=" " class="logo">
+               <span class="text-white"><h3 class="navbar-brand" style="color: white"><!-- <img src=" assets/site/images/event.png" style="width: 100px;"> --> ONLINE SERVICE</h3></span>
+            </a>
+            <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <i class="fa fa-bars"></i>
+               </span>
+            </button>
+            <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+            <div class="navbar-minimize">
+               <button class="btn btn-minimize btn-rounded">
+                  <i class="fa fa-bars"></i>
+               </button>
+            </div>
+         </div>
+         <!-- End Logo Header -->
+
+         <!-- Navbar Header -->
+         <nav class="navbar navbar-header navbar-expand-lg">
+            
+            <div class="container-fluid">
+               <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                  <li class="nav-item toggle-nav-search hidden-caret">
+                     <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown hidden-caret">
+                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                        <div class="avatar-sm avatar-online">
+                           <img src=" assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+                     </a>
+                     <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <li>
+                           <div class="user-box">
+                              <div class="avatar-lg"><img src=" assets/admin/img/unknown.jpg" alt="image profile" class="avatar-img rounded"></div>
+                              <div class="u-text">
+                                 <h4>Balaji S</h4>
+                                 <p>Retailer</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" admin/profile">Profile</a>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" admin/logout">Logout</a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+               </ul>
+            </div>
+         </nav>
+         <!-- End Navbar -->
+      </div>	      <!-- Sidebar -->
+      <div class="sidebar">
+         
+        <div class="sidebar-background"></div>
+        <div class="sidebar-wrapper scrollbar-inner">
+           <div class="sidebar-content">
+              <div class="user">
+                 <div class="avatar-sm float-left mr-2 ">
+                    <img src="assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                 </div>
+                 <div class="info">
+                    <a data-toggle="collapse" href="javascript:void(0)" aria-expanded="false" class="collapsed">
+                       <span>
+                          Balaji S                           <span class="user-level">Retailer</span>
+                       </span>
+                    </a>
+                    <div class="clearfix"></div>
+                 </div>
+              </div>
+              <ul class="nav">
+                 <li class="nav-item">
+                    <a href="index.html">
+                       <i class="fas fa-home"></i>
+                       <p>Dashboard</p>
+                    </a>
+                 </li>
+                                                                       <li class="nav-item ">
+                    <a href="services.html">
+                       <i class="far fa-handshake"></i>
+                       <p>Services</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="service_request.html">
+                       <i class="fas fa-swatchbook"></i>
+                       <p>Service Requests</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="service_assign.html">
+                       <i class="fas fa-file-export"></i>
+                       <p>Assigned Service Requests</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a data-toggle="collapse" href="#e_seva">
+                       <i class="fab fa-edge"></i>
+                       <p>E-Sevai</p>
+                       <span class="caret"></span>
+                    </a>
+                    <div class="collapse " id="e_seva">
+                       <ul class="nav nav-collapse">
+                          <li class="">
+                             <a href="e_seva_request.html">
+                                <span class="sub-item">E-Sevai Request</span>
+                             </a>
+                          </li>
+                          <li class="">
+                             <a href="e_seva_request_assign.html">
+                                <span class="sub-item">E-Sevai Assigned Request</span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="can_edit_assign.html">
+                       <i class="fas fa-equals"></i>
+                       <p>CAN Edit Assign</p>
+                    </a>
+                 </li>
+                 <!-- <li class="nav-item ">
+                    <a data-toggle="collapse" href="#dmt">
+                       <i class="fas fa-piggy-bank"></i>
+                       <p>DMT</p>
+                       <span class="caret"></span>
+                    </a>
+                    <div class="collapse " id="dmt">
+                       <ul class="nav nav-collapse">
+                          <li class="">
+                             <a href=" admin/dmt_remitter">
+                                <span class="sub-item">Remitters</span>
+                             </a>
+                          </li>
+                          <li class="">
+                             <a href=" admin/beneficiary">
+                                <span class="sub-item">Beneficiaries</span>
+                             </a>
+                          </li>
+                          <li class="">
+                             <a href=" admin/transaction">
+                                <span class="sub-item">Transactions</span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </li>
+                 <li class="nav-item ">
+                    <a href=" admin/bbps">
+                       <i class="far fa-money-bill-alt"></i>
+                       <p>Bill Payment</p>
+                    </a>
+                 </li> -->
+                 <li class="nav-item active">
+                    <a href="shop.html">
+                       <i class="fas fa-shopping-cart"></i>
+                       <p>Shop</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="orders.html">
+                       <i class="fas fa-shopping-basket"></i>
+                       <p>Your Orders</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="notification.html">
+                       <i class="fas fa-comment" aria-hidden="true"></i>
+                       <p>Notifications</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a data-toggle="collapse" href="#wallet">
+                       <i class="fas fa-wallet"></i>
+                       <p>Wallet</p>
+                       <span class="caret"></span>
+                    </a>
+                    <div class="collapse " id="wallet">
+                       <ul class="nav nav-collapse">
+                          <li class="">
+                             <a href="wallet.html">
+                                <span class="sub-item">Add Balance</span>
+                             </a>
+                          </li>
+                          <li class="">
+                             <a href="wallet_request.html">
+                                <span class="sub-item">Wallet Requests</span>
+                             </a>
+                          </li>
+                                                  </ul>
+                    </div>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="ledger.html">
+                       <i class="fas fa-exchange-alt"></i>
+                       <p>Ledger</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="payout.html">
+                       <i class="fas fa-rupee-sign"></i>
+                       <p>Payout</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="tickets.html">
+                       <i class="fas fa-hands-helping"></i>
+                       <p>Tickets</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a href="softwares.html">
+                       <i class="fab fa-accusoft"></i>
+                       <p>Softwares</p>
+                    </a>
+                 </li>
+                                </ul>
+           </div>
+        </div>
+     </div>
+      <!-- End Sidebar -->		<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">Products</h4>
+						<ul class="breadcrumbs">
+	                     <li class="nav-home">
+	                        <a href="javascript:void(0)">
+	                        <i class="flaticon-home"></i>
+	                        </a>
+	                     </li>
+	                     <li class="separator">
+	                        <i class="flaticon-right-arrow"></i>
+	                     </li>
+	                     <li class="nav-item">
+	                        <a href="javascript:void(0)">Products</a>
+	                     </li>
+	                  </ul>
+					</div>
+					<div class="row row-projects">
+                                                        <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/e48fea04cf8fda6c57a779bbaeeba3b0.webp" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Mobile holder <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 150 /-</button></h4>
+                                            <p class="text-muted small mb-2">Foldable mobile holder </p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/33">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/33">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/b409269fbf2c5b59e2a7f677be1f90f2.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">screw driver tool kit <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 669 /-</button></h4>
+                                            <p class="text-muted small mb-2">An complete set of screw driver tool kit suitable for laptop,desktop,mobiles and other electronics products</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/32">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/32">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/de1a328df4146724ff09084f105b57c4.webp" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">PEN DRIVE <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 619 /-</button></h4>
+                                            <p class="text-muted small mb-2">HP PENDRIVE 128 GB </p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/31">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/31">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/fa63bd60b413dab43caff59aa3f63da2.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">DELL CPU <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 4400 /-</button></h4>
+                                            <p class="text-muted small mb-2">An very handy and compact cpu that you can carry everywhere</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/29">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/29">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/8f66f993694bb92cb0fcaf19cf213753.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Brother B7500D <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 16799 /-</button></h4>
+                                            <p class="text-muted small mb-2">Multi-functional monochrome Laser Printer</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/28">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/28">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/9480d718a36d214a7a082d4ac24d51a5.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Brother DCP-T426W - Wi-Fi Color Ink Tank Multifunction (Print, Scan & Copy) All in One Printer for Home <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Printer Type - Ink Tank ; Functionality - All In One (Print, Scan, Copy) ; Printer Output - Color
+Connectivity - USB, Wi-Fi, Wi-Fi Direct, POWER SOURCE: 220 - 240 V AC 50/60 Hz
+Genuine Ink Bottles - BTD60BK, BT5000 C, M, Y; Page Yield - 7500 pages (Black), C, M, Y - 5000 pages each (Colour)
+Ink Color : Black, Cyan, Magenta and Yellow
+A4, Letter, Legal, Mexico Legal, India Legal, Folio, Executive, A6, Envelopes, Photo (4" x 6")/(10 x 15 cm), Photo 2L (5" x 7")/(13 x 18 cm)</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/27">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/27">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/13cb3248626846d99a277cf2da4ffa4f.jpeg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Brother DCP-T220 Ink Tank Printer <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">User-friendly and super low cost printer for home users</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/26">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/26">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/c5d02b298614b997442f5a6a5f659516.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon IR 3025 RC Photocopier Machine, For Office <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Our company has gained name and fame in presenting Canon iR 3025 RC Photocopier Machine.</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/25">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/25">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/ac3be935f1a3e4a510c760cdc1f62757.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Print Speed: 25 Ppm Canon IR 2525 RC Machine, Memory Size: 256MB <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Brand	
+Canon
+Model Number	
+IR2525 RC
+Print Speed	
+25 ppm
+Color Output	
+Black & White
+Item Color	
+White
+Leveraging the skills of our qualified team of professionals, we are instrumental in offering a wide range of Xerox Photocopier Machine.(without dadf(Auto feeder).</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/24">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/24">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/bcf09fff9449d51a80a16478d9277a93.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon IR 3030 RC Photocopier Machine, Duty Cycle: 75000 <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Paper Size	
+A3
+Functions	
+Scan, Copy
+Condition	
+New
+Copy, Network Print, Scanner,
+2 Trays (500 Sheets
+-2 Trays) 1000 sheets capacity,
+Multi By Pass Tray (100 Sheets),
+Zoom: 25% to 400%, Multiple Copies: 1-999,</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/23">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/23">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/86ce93a7fb27613cc7568a493c43be85.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">IR3225 2nd RC <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Canon Ir 3225 multifunctional Xerox mechine. Specification ur Scanner 3. Copier 4. 33 copies per minute 5. Printing up to A3 size 6. Automatic document feeder 7. Duplex printing 8. Printing resolution 12oo dpi 9. Paper capacity 2×500 sheets 2 tray10. Toner yeild 8000 to 10000 copies</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/22">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/22">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/647c0e738a893d5b34650c1c6cba7758.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon Ir 3225 Xerox Machine 1st RC, Ir3225 <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Canon Ir 3225 multifunctional Xerox mechine. Specification ur Scanner 3. Copier 4. 33 copies per minute 5. Printing up to A3 size 6. Automatic document feeder 7. Duplex printing 8. Printing resolution 12oo dpi 9. Paper capacity 2×500 sheets 2 tray10. Toner yeild 8000 to 10000 copies</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/21">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/21">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/26539f6332c46140754bdd703f4af892.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon Pixma G4010  <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">All-in-One Wireless Ink Tank Colour Printer</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/20">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/20">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/74f47a98c17d62dcd0d00c907679da6a.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon PIXMA GM2070 <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Single Function, Wi-Fi, Monochrome, Ink Tank Printer with Auto-Duplex Printing</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/19">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/19">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/dfcf20533d4a951d0253f2171cc84a90.png" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Canon 2006N <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Stay secure and connected with new A3 series
+Ideal for small and medium-sized enterprises (SMEs), the imageRUNNER 2206N/2006N/2206 series deliver basic functionalities with enhanced smart capabilities. The imageRUNNER 2206N and 2006N offers security and connectivity functionalities such as secure print, send to email and connectivity to mobile applications. Enjoy better information security alongside greater connectivity and productivity</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/18">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/18">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/69ec0d61ba5bb29ea36b2b8dca55f3e3.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Kyocera TASKalfa 2553ci Multifunctional printer, For Office <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Kyocera taskalfa 2553ci is an A3/A4 colour MFP with advanced functionality, usability, and customisation options. Print speeds of 25 ppm make it ideal for mid-sized workgroups.
+- Outstanding image quality thanks to advanced colour technology.</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/17">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/17">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/79db4d36d4bfb49e9dfe9b8170cf25b3.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Taskalfa 2321 Kyocera Multi Function Copier, For Office, Laser <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">We, Excel Copier Systems from 1995 are famous amongst the esteemed trader, wholesaler and service provider of an exceptional quality assortment of Multifunction Printers and Copier. Offered products range consists of Pixma G2000 Canon Multifunction Printer, Taskalfa 2200 Kyocera Multi Function Copier, IR 2525W Canon Multi Function Copier, ID Cards Lanyards, ID Card Lanyard Printing Service and much more. The presented products are designed with the aid of modern machines. These products are known for their easy usability, lightweight, damage resistance, and fine functioning. Also, these products are widely used in corporate, hospitals, defense, government, banks, and educational institutions</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/16">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/16">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/f13060665bb2df5828e86fc009248b3a.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Kyocera Taskalfa 3212i <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Memory Standard 2048 MB, 32 GB SSD, Optional GB HDD</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/15">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/15">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/17d18cea5e57ccd2fb07f8ef09b2405e.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">TASKalfa 2321 <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">A5 Kyocera TASKalfa TA2320, Multi-Function, Windows 8
+TASKalfa 2320
+Economically attractive, the taskalfa 2320
+B/W multifunctional printers are your highly reliable business partners. These printers are easy to operate via their straight forward operational panel. with their compact design, they virtually fit in any work environment and saves valuable office space. the devices offer exceptional high durability and deliver the professional quality that your business demands whenever you need it .</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/14">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/14">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/243682315b97ffc09ca9dbdb20572c91.jpeg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">A3 Kyocera TASKalfa TA2020, Multi-Function, Windows 8 <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">TASKalfa 2020
+Economically attractive, the taskalfa 2020
+B/W multifunctional printers are your highly reliable business partners. These printers are easy to operation</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/13">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/13">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/e2dda7e1e795f246b0fc9e5211db1ac0.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">ECOSYS KM2040dn <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Copy, Print, Scan, Fax (ECOSYS M2540dn/M2640idw only)</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/12">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/12">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/81b66acb39616f68f2b21c585f665368.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Windows XP Photocopy Konica Minolta 306i <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Copy speed - 26 page per minute copy / print speed , RAM memory is 4 GB RAM , 7 inch Touch screen , mobile print , solution capability , secure print , Quard core processor , Standred PCL, optional virus scann In main board 500 MHz processor is installed , Duplex copying in buit , means copy print both the side</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/11">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/11">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/ee61cadfdef480920949a955c5fb6d8e.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Konica Minolta Bizhub C226i Printers <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Being one of the trusted firms in the industry, we are highly engaged in providing a unique range of C226 Konica Minolta Bizhub Printers.</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/10">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/10">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/095a9c8d4c5fb1582f6caae315a9bc87.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Konica Minolta Bizhub C250i <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Printing Technology	‎Laser
+Printer Media Size Maximum	‎A4, A5
+Compatible Devices	‎PC
+Special Features	‎Network-Ready</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/9">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/9">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/f44df7d073ca8a88e5551a92ddbed822.webp" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">bizhub 225i <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">A flexible and networkable allrounder
+
+Speed A4/A3: black & white 22/8 ppm
+Paper formats: A5-A3 and customized paper sizes
+Device management software to support the administrator and ensure maximum device availability
+Flexible paper handling - high paper capacity with flexible tray configurations</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/8">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/8">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/d102b6fdc310fa4e2a55666944de61d9.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">KONICA MINOLTA 205I <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">BRAND NEW A3 SIZE XEROX MACHINE WIHT TWO SIDE PRINTING AND COPING</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/7">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/7">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/da4951cb52355032b50d0fe2a0c32188.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Konica Minolta Bizhub 367 - Mono Digital MFD, Memory Size: 2gb <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Black & White
+Print Technology	
+Laserjet
+Speed -36 Pages Per Minute Digital MFD,
+Copier; Network Printer; Color Scanner,
+Max Original Size:11</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/6">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/6">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/a61797514559880a280dcc7523a7c4c2.webp" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Laser Konica Minolta 287 multifunction printer, For Office, Black & White <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">High resolution colour print up to 28 ppm, Simplex scanning up to 55 ipm, Mobile print support with access point capability, Max paper capacity of 3, 600 sheets, Intuitive operability – Operate the bizhub like a smartphone or tablet with fully customized user interface, Secure network integration, data encryption, HDD overwrite, and advanced user authentication, Enhanced efficiency with Konica Minolta’s extensive applications portfolio.</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/5">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/5">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/f617ac541ff35f3ba127d63030e64141.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Konica Minolta KM185 E <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Speed A4/A3: black & white 18/9 ppm
+Paper formats: A5-A3 and custom formats
+Straightforward black & white copier for everyday tasks
+Easy operation thanks to well structured, intuitive operation panel</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/4">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/4">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/83ffafcc0973cb27081698b9c758d5a1.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">Konica-Minolta KM165e <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 1 /-</button></h4>
+                                            <p class="text-muted small mb-2">Konica-Minolta KM165e Multi-Functional Printer</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/3">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/3">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/d11f3fdd5db8050f031c2d7a57e81e48.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">MAGICARD Enduro Half Panel Ribbon Tri-Color Ink Cartridge <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 2100 /-</button></h4>
+                                            <p class="text-muted small mb-2">MAGICARD YMCKOK Color Half Panel Ribbon :- 250 Prints with Exclusive Cleaning Spool I Part Code : MA250YMCKO</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/2">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/2">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="p-2">
+                                            <img class="card-img-top rounded" style="height:250px;" src="https://e-junction.in/uploads/admin/products/da2b228302a079893a755363e80c0786.jpg" alt="Product 1">
+                                        </div>
+                                        <div class="card-body pt-2">
+                                            <h4 class="mb-1 fw-bold">EARPHONES <button class="btn btn-primary btn-rounded btn-sm float-right">₹ 28 /-</button></h4>
+                                            <p class="text-muted small mb-2">Minimum order quantity 10
+</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-info" href=" admin/product_view/1">View Details</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                <a class="btn btn-secondary float-right" href=" admin/product_buy/1">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+
+<script src=" assets/admin/js/plugin/webfont/webfont.min.js"></script>
+
+<!--   Core JS Files   -->
+<script src=" assets/admin/js/core/jquery.3.2.1.min.js"></script>
+<script src=" assets/admin/js/core/jquery.validate.min.js"></script>
+<script src=" assets/admin/js/core/popper.min.js"></script>
+<script src=" assets/admin/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src=" assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src=" assets/admin/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src=" assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src=" assets/admin/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src=" assets/admin/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src=" assets/admin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src=" assets/admin/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src=" assets/admin/js/plugin/datatables/datatables.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/dataTables.buttons.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/jszip.min.js"></script> 
+<script src=" assets/admin/js/plugin/datatables/pdfmake.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/vfs_fonts.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.html5.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.print.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src=" assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src=" assets/admin/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- Bootstrap Tag -->
+<script src=" assets/admin/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstaro Date Picker -->
+<script src=" assets/admin/js/bootstrap-datepicker.min.js"></script>
+<script src=" assets/admin/js/bootstrap-datetimepicker.min.js"></script>
+<script src=" assets/admin/js/moment.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src=" assets/admin/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src=" assets/admin/js/ready.min.js"></script>
+<script src=" assets/admin/js/form_validations.js"></script>
+<script src=" assets/admin/js/ckeditor/ckeditor.js"></script>
+
+<!-- Select2 -->
+<script src=" assets/admin/js/select2.full.min.js"></script>
+<!-- Drop Zone -->
+<!-- <script src=" assets/admin/js/dropzone.min.js"></script>
+<script src="assets/site/js/bootstrap-notify.min.js"></script> -->
+<!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+    }
+  }
+</script> -->
+<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: [" assets/admin/css/fonts.css"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+		$('.selectbox').select2({
+   	  });
+
+	$('.selectbox_filter').select2({
+	   theme: "bootstrap"
+	});
+	</script>
+	<script>
+    </script>
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61c9389dc82c976b71c39e28/1fnt0aanc';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</html>

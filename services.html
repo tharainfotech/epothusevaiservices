@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Online service | Services</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<!-- <link rel="icon" href="  assets/admin/img/icon.ico" type="image/x-icon"/> -->
+ <link rel="stylesheet" href=" assets/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href=" assets/admin/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href=" assets/admin/css/font-awesome.min.css">
+<link rel="stylesheet" href=" assets/admin/css/lato/latofonts.css">
+ <link rel="stylesheet" href="assets/admin/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href=" assets/admin/css/sweetalert.css">
+<link rel="stylesheet" href=" assets/admin/css/jquery-ui.css">
+<link rel="stylesheet" href=" assets/admin/css/style.min.css">	
+</head>
+<body>	
+	<div class="wrapper">		
+	<div class="main-header" data-background-color="purple">
+         <!-- Logo Header -->
+         <div class="logo-header">
+            
+            <a href=" /" class="logo">
+               <span class="text-white"><h3 class="navbar-brand" style="color: white"><!-- <img src="  assets/site/images/event.png" style="width: 100px;"> --> ONLINE SERVICE</h3></span>
+            </a>
+            <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <i class="fa fa-bars"></i>
+               </span>
+            </button>
+            <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+            <div class="navbar-minimize">
+               <button class="btn btn-minimize btn-rounded">
+                  <i class="fa fa-bars"></i>
+               </button>
+            </div>
+         </div>
+         <!-- End Logo Header -->
+
+         <!-- Navbar Header -->
+         <nav class="navbar navbar-header navbar-expand-lg">
+            
+            <div class="container-fluid">
+               <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                  <li class="nav-item toggle-nav-search hidden-caret">
+                     <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown hidden-caret">
+                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                        <div class="avatar-sm avatar-online">
+                           <img src=" assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+                     </a>
+                     <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <li>
+                           <div class="user-box">
+                              <div class="avatar-lg"><img src="  assets/admin/img/unknown.jpg" alt="image profile" class="avatar-img rounded"></div>
+                              <div class="u-text">
+                                 <h4>Balaji S</h4>
+                                 <p>Retailer</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" /admin/profile">Profile</a>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" /admin/logout">Logout</a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+               </ul>
+            </div>
+         </nav>
+         <!-- End Navbar -->
+      </div>	      <!-- Sidebar -->
+      <div class="sidebar">
+         
+         <div class="sidebar-background"></div>
+         <div class="sidebar-wrapper scrollbar-inner">
+            <div class="sidebar-content">
+               <div class="user">
+                  <div class="avatar-sm float-left mr-2 ">
+                     <img src="  assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                  <div class="info">
+                     <a data-toggle="collapse" href="javascript:void(0)" aria-expanded="false" class="collapsed">
+                        <span>
+                           Balaji S                           <span class="user-level">Retailer</span>
+                        </span>
+                     </a>
+                     <div class="clearfix"></div>
+                  </div>
+               </div>
+               <ul class="nav">
+                  <li class="nav-item ">
+                     <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                     </a>
+                  </li>
+                     <li class="nav-item active">
+                     <a href="services.html">
+                        <i class="far fa-handshake"></i>
+                        <p>Services</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_request.html">
+                        <i class="fas fa-swatchbook"></i>
+                        <p>Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_assign.html">
+                        <i class="fas fa-file-export"></i>
+                        <p>Assigned Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#e_seva">
+                        <i class="fab fa-edge"></i>
+                        <p>E-Sevai</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="e_seva">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="e_seva_request.html">
+                                 <span class="sub-item">E-Sevai Request</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="e_seva_request_assign.html">
+                                 <span class="sub-item">E-Sevai Assigned Request</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="can_edit_assign.html">
+                        <i class="fas fa-equals"></i>
+                        <p>CAN Edit Assign</p>
+                     </a>
+                  </li>
+                  <!-- <li class="nav-item ">
+                     <a data-toggle="collapse" href="#dmt">
+                        <i class="fas fa-piggy-bank"></i>
+                        <p>DMT</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="dmt">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href=" admin/dmt_remitter">
+                                 <span class="sub-item">Remitters</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/beneficiary">
+                                 <span class="sub-item">Beneficiaries</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/transaction">
+                                 <span class="sub-item">Transactions</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href=" admin/bbps">
+                        <i class="far fa-money-bill-alt"></i>
+                        <p>Bill Payment</p>
+                     </a>
+                  </li> -->
+                  <li class="nav-item ">
+                     <a href="shop.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Shop</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="orders.html">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Your Orders</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="notification.html">
+                        <i class="fas fa-comment" aria-hidden="true"></i>
+                        <p>Notifications</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#wallet">
+                        <i class="fas fa-wallet"></i>
+                        <p>Wallet</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="wallet">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="wallet.html">
+                                 <span class="sub-item">Add Balance</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="wallet_request.html">
+                                 <span class="sub-item">Wallet Requests</span>
+                              </a>
+                           </li>
+                                                   </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="ledger.html">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>Ledger</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="payout.html">
+                        <i class="fas fa-rupee-sign"></i>
+                        <p>Payout</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="tickets.html">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Tickets</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="softwares.html">
+                        <i class="fab fa-accusoft"></i>
+                        <p>Softwares</p>
+                     </a>
+                  </li>
+                                 </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar -->		<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">Services</h4>
+						<ul class="breadcrumbs">
+	                     <li class="nav-home">
+	                        <a href="javascript:void(0)">
+	                        <i class="flaticon-home"></i>
+	                        </a>
+	                     </li>
+	                     <li class="separator">
+	                        <i class="flaticon-right-arrow"></i>
+	                     </li>
+	                     <li class="nav-item">
+	                        <a href="javascript:void(0)">Services</a>
+	                     </li>
+	                  </ul>
+					</div>
+					<div class="row">
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/1"><img src="https://e-junction.in/uploads/admin/categories/894de8e80f1df6d163a7a5db2d46e710.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/1"><center class='pt-4'><strong>Ration Card Services</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/2"><img src="https://e-junction.in/uploads/admin/categories/e89876ede380d1e21683cf300d504f2d.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/2"><center class='pt-4'><strong>Pan Card Services</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/3"><img src="https://e-junction.in/uploads/admin/categories/10e39ee030e2b5613fafd747f7053d27.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/3"><center class='pt-4'><strong>TNEGA SERVICES</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/4"><img src="https://e-junction.in/uploads/admin/categories/15a74f76685e31d37b271488d20a354e.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/4"><center class='pt-4'><strong>Aadhar Card</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/5"><img src="https://e-junction.in/uploads/admin/categories/4f91d8058914958259306b6e98f3b880.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/5"><center class='pt-4'><strong>PF SERVICES</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/7"><img src="https://e-junction.in/uploads/admin/categories/843e7308390b00422f6d57e5a5047b3d.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/7"><center class='pt-4'><strong>Premium Services</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/8"><img src="https://e-junction.in/uploads/admin/categories/634aad98880ee2bbfe03546ec630bd93.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/8"><center class='pt-4'><strong>Printing Service</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/9"><img src="https://e-junction.in/uploads/admin/categories/c4c962f9a31696950900cc8ee9e38bc5.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/9"><center class='pt-4'><strong>New Card Approval</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/10"><img src="https://e-junction.in/uploads/admin/categories/f86275f9861a68cfd9d72b3104eaaa00.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/10"><center class='pt-4'><strong>Softwares</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/11"><img src="https://e-junction.in/uploads/admin/categories/bbb6e704b173854d3be24fc1d80afc34.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/11"><center class='pt-4'><strong>நலவாரியம்</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/12"><img src="https://e-junction.in/uploads/admin/categories/1a27b900f4e5c5a60b5d20986faa3640.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/12"><center class='pt-4'><strong>Find Mobile Number</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/14"><img src="https://e-junction.in/uploads/admin/categories/da7459a98628783e1e3a744d5254508a.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/14"><center class='pt-4'><strong>FIND SMART CARD</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/15"><img src="https://e-junction.in/uploads/admin/categories/145565f540dbd86f1a28b9d4e57ad9d7.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/15"><center class='pt-4'><strong>பதிவுத்துறை </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/19"><img src="https://e-junction.in/uploads/admin/categories/59f3922febaf11d6cb4388879ab36d1c.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/19"><center class='pt-4'><strong>Insurance </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/23"><img src="https://e-junction.in/uploads/admin/categories/c5b6ec85a14854dc4102bb37c4079411.jpeg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/23"><center class='pt-4'><strong>சபரி மலை </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/24"><img src="https://e-junction.in/uploads/admin/categories/43f68ef6d93ab4466ca0e7aa59a1f4c9.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/24"><center class='pt-4'><strong>LOST SMART CARD</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/25"><img src="https://e-junction.in/uploads/admin/categories/18bd69707a947d2bb7ed80d3a79f09a1.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/25"><center class='pt-4'><strong>GST</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/27"><img src="https://e-junction.in/uploads/admin/categories/b2276a519af17d4994d862fe96d01d9e.jpeg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/27"><center class='pt-4'><strong>TICKET BOOKING </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/31"><img src="https://e-junction.in/uploads/admin/categories/d55c517b821bf10d613dc4d0eea07819.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/31"><center class='pt-4'><strong>SOFTWARE KEYGEN</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/32"><img src="https://e-junction.in/uploads/admin/categories/cc3597d78be6ebc383ae14d9bd451313.jpeg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/32"><center class='pt-4'><strong>Voter id pvc card</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/33"><img src="https://e-junction.in/uploads/admin/categories/ba452f9d6c2f583e5fd8eff56001f4d7.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/33"><center class='pt-4'><strong>IRCTC AGENT ID</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/36"><img src="https://e-junction.in/uploads/admin/categories/c0892b41d64ab2c1609517a6a8eede9e.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/36"><center class='pt-4'><strong>PAN DETAILS </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/37"><img src="https://e-junction.in/uploads/admin/categories/4c342d567ddd28d7db622484ad59c90b.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/37"><center class='pt-4'><strong>Card Type Change</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/38"><img src="https://e-junction.in/uploads/admin/categories/7f2443c11f1042a975b7688dafa606c5.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/38"><center class='pt-4'><strong>SMART CARD APPLY</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/39"><img src="https://e-junction.in/uploads/admin/categories/4cc34f7ae09c6c937b3d93adccb8a95a.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/39"><center class='pt-4'><strong>ஜாதகம்</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/40"><img src="https://e-junction.in/uploads/admin/categories/a11d3e7657f665a36a0e56da211c1418.jpeg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/40"><center class='pt-4'><strong>Voter id apply</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/41"><img src="https://e-junction.in/uploads/admin/categories/afd1dffc0bf8f1be794e8d27dbb80fab.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/41"><center class='pt-4'><strong>Apply Pan card</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/44"><img src="https://e-junction.in/uploads/admin/categories/09a59792e7629b8f363565652a92db57.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/44"><center class='pt-4'><strong>TEC</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/46"><img src="https://e-junction.in/uploads/admin/categories/9b16e123129dd431526bc2e82c5c2a1a.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/46"><center class='pt-4'><strong>மறுபரிசீலனை </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/49"><img src="https://e-junction.in/uploads/admin/categories/d8ff4e003159e639f517fcfc8d4afaf3.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/49"><center class='pt-4'><strong>Limit cross</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/50"><img src="https://e-junction.in/uploads/admin/categories/b338f9c598cf2a8c52ba057cea55af98.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/50"><center class='pt-4'><strong>IPPB ACCOUNT </strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/51"><img src="https://e-junction.in/uploads/admin/categories/a5723cc16a8299c0adae196f06d4d642.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/51"><center class='pt-4'><strong>KOTAK ACCOUNT</strong></center></a>
+								</div>
+							</div>
+                        <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/53"><img src="https://e-junction.in/uploads/admin/categories/9cd0216c8a13c84cc499ab980af5b45c.png" alt="..." class="avatar-img rounded-circle"></a>
+									<a href=" /admin/service_list/53"><center class='pt-4'><strong>SPEED SERVICES</strong></center></a>
+								</div>
+							</div>
+                     <div class="col-sm-12 col-md-2">
+								<div class="avatar avatar-xxl">
+									<a href=" /admin/service_list/54"><img src="https://e-junction.in/uploads/admin/categories/6db7fabc5d37f4a79a15b834bfb000dd.jpg" alt="..." class="avatar-img rounded-circle"></a>
+									<a href="/admin/service_list/54"><center class='pt-4'><strong>2 HOUR PAN CARD</strong></center></a>
+								</div>
+							</div>
+                  </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+
+<script src="assets/admin/js/plugin/webfont/webfont.min.js"></script>
+
+<!--   Core JS Files   -->
+<script src="assets/admin/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/admin/js/core/jquery.validate.min.js"></script>
+<script src="assets/admin/js/core/popper.min.js"></script>
+<script src="assets/admin/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/admin/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src="assets/admin/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src="assets/admin/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src="assets/admin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src="assets/admin/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src="assets/admin/js/plugin/datatables/datatables.min.js"></script>
+<script src="assets/admin/js/plugin/datatables/dataTables.buttons.min.js"></script>
+<script src="assets/admin/js/plugin/datatables/jszip.min.js"></script> 
+<script src="assets/admin/js/plugin/datatables/pdfmake.min.js"></script>
+<script src="assets/admin/js/plugin/datatables/vfs_fonts.js"></script>
+<script src="assets/admin/js/plugin/datatables/buttons.html5.min.js"></script>
+<script src="assets/admin/js/plugin/datatables/buttons.print.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src="assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src="assets/admin/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- Bootstrap Tag -->
+<script src="assets/admin/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstaro Date Picker -->
+<script src="assets/admin/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/admin/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/admin/js/moment.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src="  assets/admin/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src="  assets/admin/js/ready.min.js"></script>
+<script src="  assets/admin/js/form_validations.js"></script>
+<script src="  assets/admin/js/ckeditor/ckeditor.js"></script>
+
+<!-- Select2 -->
+<script src="  assets/admin/js/select2.full.min.js"></script>
+<!-- Drop Zone -->
+<!-- <script src="  assets/admin/js/dropzone.min.js"></script>
+<script src="assets/site/js/bootstrap-notify.min.js"></script> -->
+<!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+    }
+  }
+</script> -->
+<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ["  assets/admin/css/fonts.css"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+		$('.selectbox').select2({
+   	  });
+
+	$('.selectbox_filter').select2({
+	   theme: "bootstrap"
+	});
+	</script>
+	<script>
+    </script>
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61c9389dc82c976b71c39e28/1fnt0aanc';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</html>

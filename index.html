@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Online service | Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<!-- <link rel="icon" href=" assets/admin/img/icon.ico" type="image/x-icon"/> -->
+ <link rel="stylesheet" href="assets/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/admin/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="assets/admin/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/admin/css/lato/latofonts.css">
+ <link rel="stylesheet" href="assets/admin/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="assets/admin/css/sweetalert.css">
+<link rel="stylesheet" href="assets/admin/css/jquery-ui.css">
+<link rel="stylesheet" href="assets/admin/css/style.min.css">	
+</head>
+<body>	
+	<div class="wrapper">		
+	<div class="main-header" data-background-color="purple">
+         <!-- Logo Header -->
+         <div class="logo-header">
+            
+            <a href="#" class="logo">
+               <span class="text-white"><h3 class="navbar-brand" style="color: white"><!-- <img src=" assets/site/images/event.png" style="width: 100px;"> --> ONLINE SERVICE</h3></span>
+            </a>
+            <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <i class="fa fa-bars"></i>
+               </span>
+            </button>
+            <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+            <div class="navbar-minimize">
+               <button class="btn btn-minimize btn-rounded">
+                  <i class="fa fa-bars"></i>
+               </button>
+            </div>
+         </div>
+         <!-- End Logo Header -->
+
+         <!-- Navbar Header -->
+         <nav class="navbar navbar-header navbar-expand-lg">
+            
+            <div class="container-fluid">
+               <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                  <li class="nav-item toggle-nav-search hidden-caret">
+                     <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown hidden-caret">
+                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                        <div class="avatar-sm avatar-online">
+                           <img src="assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+                     </a>
+                     <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <li>
+                           <div class="user-box">
+                              <div class="avatar-lg"><img src="assets/admin/img/unknown.jpg" alt="image profile" class="avatar-img rounded"></div>
+                              <div class="u-text">
+                                 <h4>Balaji S</h4>
+                                 <p>Retailer</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="admin/profile">Profile</a>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="admin/logout">Logout</a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+               </ul>
+            </div>
+         </nav>
+         <!-- End Navbar -->
+      </div>	      <!-- Sidebar -->
+      <div class="sidebar">
+         
+         <div class="sidebar-background"></div>
+         <div class="sidebar-wrapper scrollbar-inner">
+            <div class="sidebar-content">
+               <div class="user">
+                  <div class="avatar-sm float-left mr-2 ">
+                     <img src="assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                  <div class="info">
+                     <a data-toggle="collapse" href="javascript:void(0)" aria-expanded="false" class="collapsed">
+                        <span>
+                           Balaji S                           <span class="user-level">Retailer</span>
+                        </span>
+                     </a>
+                     <div class="clearfix"></div>
+                  </div>
+               </div>
+               <ul class="nav">
+                  <li class="nav-item active">
+                     <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                     </a>
+                  </li>
+                                                                        <li class="nav-item ">
+                     <a href="services.html">
+                        <i class="far fa-handshake"></i>
+                        <p>Services</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_request.html">
+                        <i class="fas fa-swatchbook"></i>
+                        <p>Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_assign.html">
+                        <i class="fas fa-file-export"></i>
+                        <p>Assigned Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#e_seva">
+                        <i class="fab fa-edge"></i>
+                        <p>E-Sevai</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="e_seva">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="e_seva_request.html">
+                                 <span class="sub-item">E-Sevai Request</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="e_seva_request_assign.html">
+                                 <span class="sub-item">E-Sevai Assigned Request</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="can_edit_assign.html">
+                        <i class="fas fa-equals"></i>
+                        <p>CAN Edit Assign</p>
+                     </a>
+                  </li>
+                  <!-- <li class="nav-item ">
+                     <a data-toggle="collapse" href="#dmt">
+                        <i class="fas fa-piggy-bank"></i>
+                        <p>DMT</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="dmt">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href=" admin/dmt_remitter">
+                                 <span class="sub-item">Remitters</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/beneficiary">
+                                 <span class="sub-item">Beneficiaries</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/transaction">
+                                 <span class="sub-item">Transactions</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href=" admin/bbps">
+                        <i class="far fa-money-bill-alt"></i>
+                        <p>Bill Payment</p>
+                     </a>
+                  </li> -->
+                  <li class="nav-item ">
+                     <a href="shop.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Shop</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="orders.html">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Your Orders</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="notification.html">
+                        <i class="fas fa-comment" aria-hidden="true"></i>
+                        <p>Notifications</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#wallet">
+                        <i class="fas fa-wallet"></i>
+                        <p>Wallet</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="wallet">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="wallet.html">
+                                 <span class="sub-item">Add Balance</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="wallet_request.html">
+                                 <span class="sub-item">Wallet Requests</span>
+                              </a>
+                           </li>
+                                                   </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="ledger.html">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>Ledger</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="payout.html">
+                        <i class="fas fa-rupee-sign"></i>
+                        <p>Payout</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="tickets.html">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Tickets</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="softwares.html">
+                        <i class="fab fa-accusoft"></i>
+                        <p>Softwares</p>
+                     </a>
+                  </li>
+                                 </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar -->		<div class="main-panel">
+			<div class="content">
+
+				<div class="modal fade bd-example-modal-lg" id="popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h2 class="modal-title" id="exampleModalLongTitle">IMPORTANT INFORMATION</h2>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <p><strong>&nbsp; &nbsp; &nbsp;&nbsp;Dear Members</strong></p>
+
+<p>&nbsp;</p>
+
+<h2><strong>&nbsp; &nbsp; &nbsp; </strong><strong>E-Sevai Certficate Apply Lived...Get you Ack with in 15-25 Mins</strong></h2>
+
+<p><strong>&nbsp; &nbsp;CAN Edit Lived...Correct your Can Details</strong></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp; </strong><strong>Pan Number&nbsp;Find with in 10mins</strong></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;</strong><strong>&nbsp;</strong><strong>PSTM Certificate Status Checking and Download Now Live</strong></p>
+
+<p><strong>&nbsp; &nbsp; &nbsp;நலவாரியம்</strong><strong>&nbsp;ID Card Download</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp; <strong>Nsdl Original E-Pan Pdf File Download</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>நமது இணையதளமானது அனைவருக்கும் சேவை செய்யும் உன்னத நோக்கத்துடன் உருவாக்கப்பட்டது.</strong></p>
+
+<p><strong>தயவு செய்து இதனை தவறாக பயன்படுத்த வேண்டாம். </strong></p>
+
+<p><strong>வாடிக்கையாளர் தரும் கோப்புகளை நான்கு விசாரித்து சமர்ப்பிக்கவும். </strong></p>
+
+<p><strong>நன்றி&nbsp;&nbsp;</strong></p>
+
+<p><strong>&nbsp; &nbsp;</strong></p>
+
+<p><strong>&nbsp; &nbsp;&nbsp;</strong><strong>Thank You</strong></p>
+
+<p><strong>&nbsp; &nbsp; </strong><strong>Tamil Nadu&nbsp;No.1 Service Provider Company</strong></p>
+
+<p><br />
+&nbsp;</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">Dashboard</h4>
+					</div>
+											<div class="col-md-12">
+							<div class="card">
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2500">
+								<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								</ol>
+								<div class="carousel-inner">
+																			<div class="carousel-item active">
+											<img class="d-block w-100" src="https://e-junction.in/uploads/admin/sliders/b2231857859d25cabbe84d2aec0b8e9f.jpg" alt="Slider image">
+										</div>
+																			<div class="carousel-item ">
+											<img class="d-block w-100" src="https://e-junction.in/uploads/admin/sliders/7339b0e2d8eabca29f719588237c3183.jpg" alt="Slider image">
+										</div>
+																			<div class="carousel-item ">
+											<img class="d-block w-100" src="https://e-junction.in/uploads/admin/sliders/d0da403faa04942a7116b176505e1bdc.jpg" alt="Slider image">
+										</div>
+																			<div class="carousel-item ">
+											<img class="d-block w-100" src="https://e-junction.in/uploads/admin/sliders/37af14794def930716655c113bc90e21.jpg" alt="Slider image">
+										</div>
+																	</div>
+																	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+																</div>
+							</div>
+						</div>
+											<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-primary card-round">
+								<div class="card-body" onclick="change_dashboard(1)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-stopwatch"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">Recharge</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-info card-round">
+								<div class="card-body" onclick="change_dashboard(2)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-interface-6"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">FIND PAN</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-success card-round">
+								<div class="card-body" onclick="change_dashboard(3)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-analytics"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">CAN EDIT</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-secondary card-round">
+								<div class="card-body" onclick="change_dashboard(4)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-success"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">Instant PAN</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-warning card-round">
+								<div class="card-body" onclick="change_dashboard(5)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-agenda-1"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">பத்திர நகல்</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="modal fade bd-example-modal-lg" id="regi_document" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h2 class="modal-title" id="exampleModalLongTitle">பத்திர நகல்</h2>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+										<form id= "registration_document" action=" admin/dashboard/registration_document" method = "POST" enctype="multipart/form-data" autocomplete="off">
+											<div class="col-md-12">
+												<h2 class="card-title">Service Charge : ₹ 180</h2>
+												<div class="form-group">
+													<label for="Number">Register Office*</label>
+													<input type="text" list="srolist" class="form-control" name="document_office" id="document_office" class="form-control" placeholder="Enter Register Office">
+													<datalist id="srolist">
+													<option value="Aandimadam">
+														<option value="Aathur_Dindugal">
+														<option value="Aathur_Salem East">
+														<option value="Abiramam">
+														<option value="Acchirapakkam">
+														<option value="Adayar">
+														<option value="Adhiramapattinam">
+														<option value="Alandur">
+														<option value="Alanganallur">
+														<option value="Alangudi">
+														<option value="Alangulamv">
+														<option value="Alwarthirunagari">
+														<option value="Ambasamudhiram">
+														<option value="Ambattur">
+														<option value="Ambur">
+														<option value="Ammapettai_Erode">
+														<option value="Anaimalai">
+														<option value="Ananthapuram">
+														<option value="Andipatti">
+														<option value="AnnaNagar">
+														<option value="Annavasal">
+														<option value="Anniyur">
+														<option value="Annur">
+														<option value="Anthiyur">
+														<option value="Aragandanallur">
+														<option value="Arakkonam">
+														<option value="Arani_Cheyyar">
+														<option value="Arani_Tiruvallur">
+														<option value="Aranthangi">
+														<option value="Arasaradi">
+														<option value="Aravakurichi">
+														<option value="Arcot">
+														<option value="Ariyalur Joint I">
+														<option value="Arumanai">
+														<option value="Aruppukkottai">
+														<option value="Ashok Nagar">
+														<option value="Avadi">
+														<option value="Avaloorpettai">
+														<option value="Avalpoondurai">
+														<option value="Avarapakkam">
+														<option value="Avinasi">
+														<option value="Ayothiyapattinam">
+														<option value="Ayyampalayam">
+														<option value="Ayyampettai">
+														<option value="Bargur">
+														<option value="Barur">
+														<option value="Bhavani">
+														<option value="Bhuvanagiri">
+														<option value="Bodinayakkanur">
+														<option value="Boghalur">
+														<option value="Boothalur">
+														<option value="Boothapandi">
+														<option value="Burkitmanagaram">
+														<option value="Chathirapatti">
+														<option value="Chekkanoorani">
+														<option value="Chembanarkovil">
+														<option value="Chengam">
+														<option value="Chengleput Joint I">
+														<option value="Chengleput Joint II">
+														<option value="Chennai Central Joint I">
+														<option value="Chennai Central Joint II">
+														<option value="Chennai North Joint I">
+														<option value="Chennai South Joint I">
+														<option value="Chennai South Joint II">
+														<option value="Chennimalai">
+														<option value="Cheranmahadevi Joint I">
+														<option value="Cheranmahadevi Joint II">
+														<option value="Chetput">
+														<option value="Chettikulam">
+														<option value="Cheyyar Joint I">
+														<option value="Cheyyar Joint II">
+														<option value="Cheyyur">
+														<option value="Chidambaram Joint I">
+														<option value="Chinna selam">
+														<option value="Chinnadarapuram">
+														<option value="Chinnalapatti">
+														<option value="Chinnamanur">
+														<option value="Chokkikulam">
+														<option value="Cholavanthan">
+														<option value="Coimbatore Joint I">
+														<option value="Coimbatore Joint II">
+														<option value="Coonoor_Uthagamandalam">
+														<option value="Coonoor_virudhunagar">
+														<option value="Cuddalore Joint I">
+														<option value="Cuddalore Joint II">
+														<option value="Cumbum">
+														<option value="Dadagapatti">
+														<option value="Devakkottai">
+														<option value="Dharapuram">
+														<option value="Dharmapuri Joint I">
+														<option value="Dharmapuri Joint II">
+														<option value="Dharmapuri(West)">
+														<option value="Dindivanam Joint I">
+														<option value="Dindivanam Joint II">
+														<option value="Dindugal Joint I">
+														<option value="Dindugal Joint II">
+														<option value="Dusi">
+														<option value="Edapadi">
+														<option value="Elavanasur">
+														<option value="Eral">
+														<option value="Erandampulikadu">
+														<option value="Eranial">
+														<option value="Erode Joint I">
+														<option value="Erumaipatti">
+														<option value="Erumbulikurichi">
+														<option value="Ettayapuram">
+														<option value="Ezhumalai">
+														<option value="Ganapathy">
+														<option value="Gandhipuram">
+														<option value="Gangaikondan">
+														<option value="Gangavalli">
+														<option value="Gingee">
+														<option value="Gobichettipalayam Joint I">
+														<option value="Gobichettipalayam Joint II">
+														<option value="Gomangalam">
+														<option value="Goodaloor">
+														<option value="Gooduvancheri">
+														<option value="Gummidipoondi">
+														<option value="Harur">
+														<option value="Hozur">
+														<option value="Idaikkal">
+														<option value="Idalagudi">
+														<option value="Ilayangudi">
+														<option value="Iluppur">
+														<option value="Jalakandapuram">
+														<option value="Jayakondam">
+														<option value="Jolarpettai">
+														<option value="Kadaladi_Ramanathapuram">
+														<option value="Kadaladi_Thiruvannamalai">
+														<option value="Kadamalaikundu">
+														<option value="Kadambur">
+														<option value="Kadampuliyur">
+														<option value="Kadathur">
+														<option value="Kadayam">
+														<option value="Kadayanallur">
+														<option value="Kalakkadu">
+														<option value="Kalampur">
+														<option value="Kalasapakkam">
+														<option value="Kalavai">
+														<option value="Kalayarkoil">
+														<option value="Kallakurichi Joint I">
+														<option value="Kallakurichi Joint II">
+														<option value="Kallidaikurichi">
+														<option value="Kallikudi">
+														<option value="Kallimandayam">
+														<option value="Kalugumalai">
+														<option value="Kammapuram">
+														<option value="Kamudhi">
+														<option value="Kanchipuram Joint I">
+														<option value="Kanchipuram Joint II">
+														<option value="Kanchipuram Joint IV">
+														<option value="Kandamangalam">
+														<option value="Kangeyam">
+														<option value="Kaniyampadi">
+														<option value="Kaniyur">
+														<option value="Kannamangalam">
+														<option value="Kannivadi">
+														<option value="Kantharvakottai">
+														<option value="Kanyakumari Joint I">
+														<option value="Karaikudi Joint II">
+														<option value="Karakudi Joint I">
+														<option value="Karambakudi">
+														<option value="Kariapatti">
+														<option value="Karimangalam">
+														<option value="Karivalamvandanallur">
+														<option value="Karungal">
+														<option value="Karungalakkudi">
+														<option value="Karunthattankudi">
+														<option value="Karur Joint I">
+														<option value="Karur Joint II">
+														<option value="Katpadi">
+														<option value="Kattuputhur">
+														<option value="Kaveripakkam">
+														<option value="Kaveripattinam">
+														<option value="Kavundapadi">
+														<option value="Kayalpattinam">
+														<option value="Kayathar">
+														<option value="Keelakkarai">
+														<option value="Keelanilai">
+														<option value="KeelaRajakularaman">
+														<option value="Keeramangalam">
+														<option value="Keeranur">
+														<option value="Keezh Vazhi ThunaiyanKuppam">
+														<option value="Keezhaapazhur">
+														<option value="Keezhsathanur">
+														<option value="Keezhur">
+														<option value="Kelamangalam">
+														<option value="Kilkodungalur">
+														<option value="Kilpennathur">
+														<option value="Kinathukkadavu">
+														<option value="Kodaikkanal">
+														<option value="Kodambakkam">
+														<option value="Kodavasal">
+														<option value="Kodumudi">
+														<option value="Kolakkanatham">
+														<option value="Kolathur">
+														<option value="Kollankodu">
+														<option value="Kollidam">
+														<option value="Kommadikottai">
+														<option value="Konnur">
+														<option value="Koothanalur">
+														<option value="Kothagiri">
+														<option value="Kottaram">
+														<option value="Kovilpatii">
+														<option value="Krishnagiri Joint I">
+														<option value="Krishnagiri Joint II">
+														<option value="Krishnarayapuram">
+														<option value="Kudiyatham">
+														<option value="Kujiliamparai">
+														<option value="Kulatchal">
+														<option value="Kulithalai">
+														<option value="Kullanchavadi">
+														<option value="Kumarachi">
+														<option value="Kumarapalayam">
+														<option value="Kumbakonam Joint I">
+														<option value="Kunnathur">
+														<option value="Kunrathur">
+														<option value="Kurinchi padi">
+														<option value="Kuthalam">
+														<option value="Lalkudi">
+														<option value="Madakkupatti">
+														<option value="Madhavaram">
+														<option value="Madukkarai">
+														<option value="Madukkur">
+														<option value="Madurai North Joint I">
+														<option value="Madurai South Joint 4">
+														<option value="Madurai South Joint I">
+														<option value="Madurandakam">
+														<option value="Magudanchavadi">
+														<option value="Makarnonbuchavadi">
+														<option value="Mallasamuthiram">
+														<option value="Manalurpettai">
+														<option value="Manamadurai">
+														<option value="Manamelkudi">
+														<option value="Manaparai">
+														<option value="Manavalakurichi">
+														<option value="Manavalanagar">
+														<option value="Mangalam">
+														<option value="Mangalamapettai">
+														<option value="Mannachanallur">
+														<option value="Mannargudi">
+														<option value="Mannarkudi">
+														<option value="Marakkanam">
+														<option value="Marandahalli">
+														<option value="Marthandam Joint I">
+														<option value="Marthandam Joint II">
+														<option value="Mayiladuthurai Joint I">
+														<option value="Mayiladuthurai Joint II">
+														<option value="Mayilam">
+														<option value="Mecheri">
+														<option value="Meemisal">
+														<option value="Meensurutti">
+														<option value="Melakarur">
+														<option value="Melaneelithanallur">
+														<option value="Melapapalayam">
+														<option value="Melur">
+														<option value="Melur_Tuticorin">
+														<option value="Mettupalayam">
+														<option value="Mettur">
+														<option value="Moganur">
+														<option value="Moolakaraipatti">
+														<option value="Moolanur">
+														<option value="Morapur">
+														<option value="Mudhukulathur">
+														<option value="Mukkoodal">
+														<option value="Munchirai">
+														<option value="Murapanadu">
+														<option value="Musiri">
+														<option value="Muthupettai">
+														<option value="Mylapore">
+														<option value="Nachiyarkovil">
+														<option value="Nagal nayakkampatti">
+														<option value="Nagalur">
+														<option value="Nagapatinam Joint I">
+														<option value="Nagoor">
+														<option value="Nallur_Tiruppur">
+														<option value="Nallur_Virudhachalam">
+														<option value="Namagiripettai">
+														<option value="Namakkal Joint I">
+														<option value="Namakkal Joint II">
+														<option value="Nambiyur">
+														<option value="Nangavaram">
+														<option value="Nanguneri">
+														<option value="Nannilam">
+														<option value="Natham">
+														<option value="Natrampalli">
+														<option value="Nayinar kovil">
+														<option value="Nazareth">
+														<option value="Needamangalam">
+														<option value="Neelankarai">
+														<option value="Negamam">
+														<option value="Nellikuppam">
+														<option value="Nemili">
+														<option value="Nilakkottai">
+														<option value="Odugathur">
+														<option value="Omalur">
+														<option value="Oothangarai">
+														<option value="Oothukkottai">
+														<option value="Orathanadu">
+														<option value="Othakadai">
+														<option value="Ottanchathiram">
+														<option value="Ottapidaram">
+														<option value="Padappai">
+														<option value="Palacode">
+														<option value="Palani Joint I">
+														<option value="Palani Joint II">
+														<option value="Palayankottai joint I">
+														<option value="Palladam">
+														<option value="Pallavaram">
+														<option value="Pallikonda">
+														<option value="Pallipalayam">
+														<option value="Pallipattu">
+														<option value="Palliyadi">
+														<option value="Palugal">
+														<option value="Pammal">
+														<option value="Panagudi">
+														<option value="Panpozhi">
+														<option value="Panrutti">
+														<option value="Panthalkudi">
+														<option value="Papanasam">
+														<option value="Pappanadu">
+														<option value="Pappireddypatti">
+														<option value="Paramakudi">
+														<option value="Paramathi">
+														<option value="Parangipettai">
+														<option value="Pattukottai Joint I">
+														<option value="Pattukottai Joint II">
+														<option value="Pavoorchathram">
+														<option value="Peelamedu">
+														<option value="Pennadam">
+														<option value="Pennagaram">
+														<option value="Peraiyur">
+														<option value="Peralam">
+														<option value="Perambakkam">
+														<option value="Perambalur Joint 1">
+														<option value="Peranamallur">
+														<option value="Peravoorani">
+														<option value="Periamet">
+														<option value="Periyakulam Joint I">
+														<option value="Periyakulam Joint II">
+														<option value="Periyanayakkan Palayam">
+														<option value="Pernampattu">
+														<option value="Perunazhi">
+														<option value="Perundurai">
+														<option value="Perungalur">
+														<option value="Perungulam">
+														<option value="Pethanayakanpalayam">
+														<option value="Pettai">
+														<option value="Pochampalli">
+														<option value="Pollachi">
+														<option value="Polur">
+														<option value="Ponnamaravathi">
+														<option value="Ponneri">
+														<option value="Poonamallee">
+														<option value="Puduchathiram_Namakkal">
+														<option value="Puduchattiram_Chidambaram">
+														<option value="Pudukkottai">
+														<option value="Pudukkottai Joint I">
+														<option value="Pudupettai">
+														<option value="Pudur">
+														<option value="Puliyangudi">
+														<option value="Pullampadi">
+														<option value="Punchaipuliyampatti">
+														<option value="Purasaivakkam">
+														<option value="Radhapuram">
+														<option value="Rajackamangalam">
+														<option value="Rajapalayam">
+														<option value="Rajasinga mangalam">
+														<option value="Ramakrishna Rajupettai">
+														<option value="Ramanathapuram Joint I">
+														<option value="Ramanathapuram Joint II">
+														<option value="Rameshvaram">
+														<option value="Ranipet Joint I">
+														<option value="Rasipuram">
+														<option value="Rayakottai">
+														<option value="Redhills">
+														<option value="Rishivanthiyam">
+														<option value="Royapuram">
+														<option value="Salavakkam">
+														<option value="Salem East Joint I">
+														<option value="Salem West Joint I">
+														<option value="Salem West Joint III">
+														<option value="Sanarpatti">
+														<option value="Sangagiri">
+														<option value="Sankaranainarkoil">
+														<option value="Sankarapuram">
+														<option value="Sathankulam">
+														<option value="Sathur">
+														<option value="Sathyamangalam">
+														<option value="Sathyamangalam_Dindivanam">
+														<option value="Sayalkudi">
+														<option value="Seerkazhi">
+														<option value="Selaiyur">
+														<option value="Sembiam">
+														<option value="Sendhurai_Ariyalur">
+														<option value="Sendhurai_Dindigul">
+														<option value="Senkottai">
+														<option value="Senthamangalam">
+														<option value="Sethiyathope">
+														<option value="Sethur">
+														<option value="Sholingar">
+														<option value="Sindupatti">
+														<option value="Singampunari">
+														<option value="Singanallur">
+														<option value="Sirupakkam">
+														<option value="Sivagangai Joint I">
+														<option value="Sivagangai Joint II">
+														<option value="Sivagiri_Erode">
+														<option value="Sivagiri_Tenkasi">
+														<option value="Sivakasi">
+														<option value="Soolagiri">
+														<option value="Sowcarpet">
+														<option value="Sriperumpudur">
+														<option value="Srirangam">
+														<option value="Srivaikundam">
+														<option value="Srivilliputhur">
+														<option value="Subbramaniyapuram">
+														<option value="Sulur">
+														<option value="Sunguvarchattram">
+														<option value="Suramangalam">
+														<option value="Surampatti">
+														<option value="Surandai">
+														<option value="Swamimalai">
+														<option value="Tambaram">
+														<option value="Tenkasi Joint I">
+														<option value="Tenkasi Joint II">
+														<option value="Tha.Pazhur">
+														<option value="Thaanipadi">
+														<option value="Thackalai">
+														<option value="Thakkattur">
+														<option value="Thalaivasal">
+														<option value="Thalavadi">
+														<option value="Thallakualam">
+														<option value="Thamal">
+														<option value="Thamaraipatti">
+														<option value="Thammampatti">
+														<option value="Thandarampattu">
+														<option value="Thanjavur Joint I">
+														<option value="Tharagampatti">
+														<option value="Tharamangalam">
+														<option value="Tharangampadi">
+														<option value="Thathaiyangarpettai">
+														<option value="Thellar">
+														<option value="Theni">
+														<option value="Thenkanikottai">
+														<option value="Theppakulam">
+														<option value="Thevaram">
+														<option value="Thingalur">
+														<option value="Thiruchengode">
+														<option value="Thiruchuli">
+														<option value="Thirukattupalli">
+														<option value="Thirukazhukundram">
+														<option value="Thirukovilur">
+														<option value="Thirukurungudi">
+														<option value="Thirukuvalai">
+														<option value="Thirumangalam">
+														<option value="Thirumayam">
+														<option value="Thirumuttam">
+														<option value="Thirunavalur">
+														<option value="Thiruparankunram">
+														<option value="Thirupathur Joint 1">
+														<option value="Thirupathur Joint 2">
+														<option value="Thirupoondi">
+														<option value="Thiruporur">
+														<option value="Thiruppanandhal">
+														<option value="Thiruppathur_Karaikudi">
+														<option value="Thirupuvanam">
+														<option value="Thiruthangal">
+														<option value="Thiruthuraipoondi">
+														<option value="Thiruttani">
+														<option value="Thiruvadanai">
+														<option value="Thiruvaiyaru">
+														<option value="Thiruvalankadu">
+														<option value="Thiruvannamalai Joint I">
+														<option value="Thiruvannamalai Joint II">
+														<option value="Thiruvarumpur">
+														<option value="Thiruvarur Joint 1">
+														<option value="Thiruvattar">
+														<option value="Thiruvennainallur">
+														<option value="Thiruvidaimarudhur">
+														<option value="Thiruvonam">
+														<option value="Thiruvottiyur">
+														<option value="Thisaiyanvilai">
+														<option value="Thittakudi">
+														<option value="Thiyaga thurgam">
+														<option value="Thiyagaraya nagar">
+														<option value="Thondamuthur">
+														<option value="Thondi">
+														<option value="Thookanaicken Palayam">
+														<option value="Thottipalayam">
+														<option value="Thovalai">
+														<option value="Thozhuudhur">
+														<option value="Thuraiyur">
+														<option value="Thuvarankurichi">
+														<option value="Tiruchendur">
+														<option value="Tirunelveli Joint I">
+														<option value="Tirunelveli Joint II">
+														<option value="Tiruppur Joint I">
+														<option value="Tiruppur Joint II">
+														<option value="Tiruvallur Joint 1">
+														<option value="Trichi Joint III">
+														<option value="Trichy Joint 1">
+														<option value="Triplicane">
+														<option value="Tuticorin Joint I">
+														<option value="Tuticorin Joint II">
+														<option value="Udankudi">
+														<option value="Udayarpalayam">
+														<option value="Udumalpettai">
+														<option value="Ullikottai">
+														<option value="Ulundurpettai">
+														<option value="Uppiliyapuram">
+														<option value="Urayur">
+														<option value="Usilampatti">
+														<option value="Uthagamandalam -Joint I">
+														<option value="Uthagamandalam -Joint II">
+														<option value="Uthamapalayam">
+														<option value="Uthiramerur">
+														<option value="Uthukuli">
+														<option value="Uthumalai">
+														<option value="Vada madurai">
+														<option value="Vadakkananthal">
+														<option value="Vadakkuveeravanallur">
+														<option value="Vadalur">
+														<option value="Vadaponparappi">
+														<option value="Vadaseri">
+														<option value="Vadavalli">
+														<option value="Vadipatti">
+														<option value="Valankaiman">
+														<option value="Valathi">
+														<option value="Valavanur">
+														<option value="Valighandapuram">
+														<option value="Vallam_Dindivanam">
+														<option value="Vallam_Thanjavur">
+														<option value="Valliyur">
+														<option value="Vandavasi">
+														<option value="Vaniyampadi">
+														<option value="Vanur">
+														<option value="Vasudevanallur">
+														<option value="Vathalagundu">
+														<option value="Vathirairuppu">
+														<option value="Vazhapadi">
+														<option value="Veda senthur">
+														<option value="Vedharanyam">
+														<option value="Veerachozhan">
+														<option value="Veerasigamani">
+														<option value="Velacheri">
+														<option value="Velagoundampatti">
+														<option value="Velayuthampalayam">
+														<option value="Velipattinam">
+														<option value="Vellakovil">
+														<option value="Velliyanai">
+														<option value="Vellore Joint I">
+														<option value="Velur">
+														<option value="Vembakkam">
+														<option value="Veppannapalli">
+														<option value="Veppanthattai">
+														<option value="Veppur_Perambalur">
+														<option value="Veppur_Viruddchalam">
+														<option value="Verapandi">
+														<option value="Verkilambi">
+														<option value="Vettavalam">
+														<option value="Vickramasingapuram">
+														<option value="Vikkravandi">
+														<option value="Vikramangalam">
+														<option value="Vilathikulam">
+														<option value="Villivakkam">
+														<option value="Villupuram Joint I">
+														<option value="Villupuram Joint II">
+														<option value="Viralimalai">
+														<option value="Virudhachalam Joint I">
+														<option value="Virudhunagar Joint I">
+														<option value="Virudhunagar Joint II">
+														<option value="Virugambakkam">
+														<option value="Walaja">
+														<option value="Walajabad">
+														<option value="Yercaud">
+												</datalist>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="Number">Document Number*</label>
+													<input type="text" class="form-control" name="document_number" id="document_number" class="form-control" placeholder="Enter Document Number">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="Number">Year of Registration*</label>
+													<input type="text" class="form-control" name="document_year" id="document_year" class="form-control" placeholder="Enter Year of Registration">
+												</div>
+											</div>
+											<center><input type ="submit" class="btn btn-success btn-round" name ="submit" value = "Pay ₹ 180 & Submit"></center>
+										</form>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-danger card-round">
+								<div class="card-body" onclick="change_dashboard(6)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-calendar"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">நலவாரியம் ID CARD</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-primary card-round">
+								<div class="card-body" onclick="change_dashboard(7)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-arrows-1"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">PSTM</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade bd-example-modal-lg" id="pstm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h2 class="modal-title" id="exampleModalLongTitle">PSTM</h2>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+										<form id= "pstm_status" method = "POST" enctype="multipart/form-data" autocomplete="off">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="Number">Application Number*</label>
+													<div class="input-group mb-3">
+														<input type="text" class="form-control" name="application_number" id="application_number" class="form-control" placeholder="Enter Application Number" autocomplete="off" aria-label="Application Number" aria-describedby="basic-addon2">
+														<div class="input-group-append">
+														<button class="btn btn-default btn-border" id="plan" type="button" onclick = "get_pstm();">Search <i class="far fa-arrow-alt-circle-right"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+											<div id="show_appli" class="pl-4"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-info card-round">
+								<div class="card-body" onclick="change_dashboard(8)">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-file-1"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">NSDL E-PAN PDF</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-primary card-round">
+								<div class="card-body" onclick="location.href=' admin/panfind'">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-interface-6"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">Automatic PAN PDF Download</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-info card-round">
+								<div class="card-body" onclick="location.href=' admin/bank_name_check'">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-store"></i>
+											</div>
+										</div>
+										<div class="col col-stats">
+											<div class="numbers">
+												<h4 class="card-title">A/c Holder Name Checker</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="dashboard_show">
+						
+					<div class="row">
+							<!-- <div class="col-sm-6 col-md-3" onclick="location.href=' admin/dmt'">
+								<div class="card card-stats card-round">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="flaticon-coins text-success"></i>
+												</div>
+											</div>
+											<div class="col col-stats">
+												<div class="numbers">
+													<h4 class="card-title">DMT Service</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<!-- <div class="col-sm-6 col-md-3">
+								<div class="card card-stats card-round">
+									<div class="card-body ">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="flaticon-chart-pie text-warning"></i>
+												</div>
+											</div>
+											<div class="col col-stats">
+												<div class="numbers">
+													<h4 class="card-title">AEPS Service</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-sm-6 col-md-3" onclick="location.href=' admin/bbps'">
+								<div class="card card-stats card-round">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="flaticon-credit-card text-danger"></i>
+												</div>
+											</div>
+											<div class="col col-stats">
+												<div class="numbers">
+													<h4 class="card-title">BBPS Service</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-sm-6 col-md-3">
+								<div class="card card-stats card-round">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="flaticon-price-tag text-primary"></i>
+												</div>
+											</div>
+											<div class="col col-stats">
+												<div class="numbers">
+													<h4 class="card-title">Fast Tag</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="row">
+														<div class="col-sm-6 col-md-3">
+								<div class="card card-stats card-round">
+									<div class="card-body ">
+										<div class="row align-items-center">
+											<div class="col-icon">
+												<div class="icon-big text-center icon-success bubble-shadow-small">
+													<i class="far fa-handshake"></i>
+												</div>
+											</div>
+											<div class="col col-stats ml-3 ml-sm-0">
+												<div class="numbers">
+													<p class="card-category">Services</p>
+													<h4 class="card-title">229</h4> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="card card-stats card-round">
+									<div class="card-body ">
+										<div class="row align-items-center">
+											<div class="col-icon">
+												<div class="icon-big text-center icon-primary bubble-shadow-small">
+													<i class="fas fa-wallet"></i>
+												</div>
+											</div>
+											<div class="col col-stats ml-3 ml-sm-0">
+												<div class="numbers">
+													<p class="card-category">Wallet</p>
+													<h4 class="card-title">₹ 55</h4> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row row-card">
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-head-row">
+											<h4 class="card-title"><a href="admin/notification">Notifications</a></h4>
+										</div>
+										<p class="card-category">
+										Latest notifications are here</p>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="table-responsive table-hover table-sales">
+													<table class="table">
+														<thead>
+															<tr>
+																<th width="20%">Title</th>
+																<th width="40%">About</th>
+																<th width="20%">Date</th>
+																<th width="20%">Action</th>
+															</tr>
+														</thead>
+													<tbody>
+													<tr>
+													<td>
+													INFORMATION</td>
+													<td>
+													AADHAAR CORRECTION WITHOUT PROOF HAS BEEN ENABLED
+													</td>
+													<td>
+													04-Nov-22 05:33 PM																	</td>
+													<td>
+													<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/notification_view/7"><i class="fas fa-eye"></i></a>
+													</td>
+													</tr>
+													<tr>
+													<td>
+													PAYOUT DETAILS																	</td>
+													<td>
+													Dear Members kindly update your Bank Account Details in Profile column
+													for Payout Process..																	</td>
+													<td>
+													04-Oct-22 04:22 PM																	</td>
+													<td>
+													<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/notification_view/2"><i class="fas fa-eye"></i></a>
+													<a class="text-white btn btn-success btn-sm" title="Click to view file" href="https://e-junction.in/uploads/admin/notifications/a2dc58d57c4b2c9ca23173f52b8127db.jpg" target="_blank"><i class="fas fa-paperclip"></i></a>
+													</td>
+													</tr>
+													</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-head-row">
+											<h4 class="card-title"><a href=" admin/notification">Service Requests</a></h4>
+										</div>
+										<p class="card-category">
+										Latest service request are here</p>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="table-responsive table-hover table-sales">
+													<table class="table">
+														<thead>
+															<tr>
+																<th width="15%">ID</th>
+																<th width="30%">Category</th>
+																<th width="30%">Service</th>
+																<th width="15%">Status</th>
+																<th width="10%">Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+															<td>
+															REQID01685</td>
+															<td>
+															Pan Card Services</td>
+															<td>
+															UTI EPAN DOWNLOAD</td>
+															<td>
+															<button class="btn btn-danger btn-border btn-round">Rejected</button>
+
+															</td>
+															<td>
+															<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/service_request_view/1685"><i class="fas fa-eye"></i></a>
+															</td>
+															</tr>
+															<tr>
+															<td>
+															REQID01524</td>
+															<td>
+															Aadhar Card</td>
+															<td>
+															Correction without proof</td>
+															<td>
+															<button class="btn btn-danger btn-border btn-round">Rejected</button>
+
+															</td>
+															<td>
+															<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/service_request_view/1524"><i class="fas fa-eye"></i></a>
+															</td>
+															</tr>
+															<tr>
+															<td>
+															REQID01385</td>
+															<td>
+															TNEGA SERVICES</td>
+															<td>
+															Certificate Payment</td>
+															<td>
+															<button class="btn btn-success btn-border btn-round">Completed</button>
+
+															</td>
+															<td>
+															<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/service_request_view/1385"><i class="fas fa-eye"></i></a>
+															</td>
+															</tr>
+															<tr>
+															<td>
+															REQID01383</td>
+															<td>
+															TNEGA SERVICES</td>
+															<td>
+															Certificate Payment</td>
+															<td>
+															<button class="btn btn-success btn-border btn-round">Completed</button>
+
+															</td>
+															<td>
+															<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/service_request_view/1383"><i class="fas fa-eye"></i></a>
+															</td>
+															</tr>
+															<tr>
+															<td>
+															REQID01380																		</td>
+															<td>
+															TNEGA SERVICES																		</td>
+															<td>
+															MOBILE NUMBER CHANGE																		</td>
+															<td>
+															<button class="btn btn-success btn-border btn-round">Completed</button>
+
+															</td>
+															<td>
+															<a class="text-white btn btn-primary btn-sm" title="Click to view" href=" admin/service_request_view/1380"><i class="fas fa-eye"></i></a>
+															</td>
+															</tr>
+															</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-head-row">
+											<h4 class="card-title">Ticket Last Conversations</h4>
+											<div class="card-tools">
+											<ul class="nav nav-pills nav-secondary nav-pills-no-bd nav-sm" id="pills-tab" role="tablist">
+												<li class="nav-item">
+													<button class="nav-link">Open : 1</button>
+												</li>
+												<li class="nav-item">
+													<button class="nav-link">Pending : 0</button>
+												</li>
+												<li class="nav-item">
+													<button class="nav-link">Closed : 0</button>
+												</li>
+											</ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="card-body">
+																						<div class="d-flex">
+													<div class="avatar">
+														<span class="avatar-title rounded-circle border border-white bg-info">B</span>
+													</div>
+													<div class="flex-1 ml-3 pt-1">
+														<h5 class="text-uppercase fw-bold mb-1"><a href=" admin/ticket_view/183">TKTID0183</a></h5>
+														<span class="text-muted">RATION CARD SOFTWER I WANT SIR </span>
+													</div>
+													<div class="float-right pt-1">
+														<small class="text-muted">05-Feb-23 12:56 PM</small><br>
+														<small><span class="text-info pl-3">By You</span></small>
+													</div>
+												</div>
+												<div class="separator-dashed"></div>
+																					</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+
+<script src=" assets/admin/js/plugin/webfont/webfont.min.js"></script>
+
+<!--   Core JS Files   -->
+<script src=" assets/admin/js/core/jquery.3.2.1.min.js"></script>
+<script src=" assets/admin/js/core/jquery.validate.min.js"></script>
+<script src=" assets/admin/js/core/popper.min.js"></script>
+<script src=" assets/admin/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src=" assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src=" assets/admin/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src=" assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src=" assets/admin/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src=" assets/admin/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src=" assets/admin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src=" assets/admin/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src=" assets/admin/js/plugin/datatables/datatables.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/dataTables.buttons.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/jszip.min.js"></script> 
+<script src=" assets/admin/js/plugin/datatables/pdfmake.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/vfs_fonts.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.html5.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.print.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src=" assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src=" assets/admin/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- Bootstrap Tag -->
+<script src=" assets/admin/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstaro Date Picker -->
+<script src=" assets/admin/js/bootstrap-datepicker.min.js"></script>
+<script src=" assets/admin/js/bootstrap-datetimepicker.min.js"></script>
+<script src=" assets/admin/js/moment.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src=" assets/admin/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src=" assets/admin/js/ready.min.js"></script>
+<script src=" assets/admin/js/form_validations.js"></script>
+<script src=" assets/admin/js/ckeditor/ckeditor.js"></script>
+
+<!-- Select2 -->
+<script src=" assets/admin/js/select2.full.min.js"></script>
+<!-- Drop Zone -->
+<!-- <script src=" assets/admin/js/dropzone.min.js"></script>
+<script src="assets/site/js/bootstrap-notify.min.js"></script> -->
+<!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+    }
+  }
+</script> -->
+<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: [" assets/admin/css/fonts.css"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+		$('.selectbox').select2({
+   	  });
+
+	$('.selectbox_filter').select2({
+	   theme: "bootstrap"
+	});
+	</script>
+	<script>
+    </script>
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61c9389dc82c976b71c39e28/1fnt0aanc';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+<script>
+	// $('#document_office').select2({
+	//    theme: "bootstrap"
+	// });
+			$(document).ready(function() {
+            $('#popup').modal('show')
+         });
+			function change_dashboard(type)
+	{
+		if(type == 7)
+		{
+			$('#pstm').modal('show');
+		}
+		else
+		{
+			$.ajax({
+			url: " admin/dashboard/dashboard_show",
+			type: "post",
+			data: 'type='+type,
+			success: function (response) {
+			$('#dashboard_show').html(response);
+			},
+			
+		});
+		}
+	}
+
+	function get_pstm()
+	{
+		var pstm = $('#application_number').val();
+			$.ajax({
+			url: " admin/dashboard/dashboard_show",
+			type: "post",
+			data: 'pstm='+pstm,
+			success: function (response) {
+			$('#show_appli').html(response);
+			},
+			});
+		 }
+
+	function pay_file()
+    {
+        var mode = 7;
+        var pstm = $('#application_number').val();
+        $.ajax({
+        url: " admin/dashboard/pay_file",
+        type: "post",
+        data: 'type='+mode+'&pstm='+pstm,
+        success: function (response) {
+		swal("Success", "The amount is debited from wallet", "success");
+        $('#pstm_link').html(response);
+        },
+        });
+    }
+</script>
+</html>

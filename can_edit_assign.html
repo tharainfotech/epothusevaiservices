@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Online service | CAN Edit Assign</title>
+      <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+      <!-- <link rel="icon" href=" assets/admin/img/icon.ico" type="image/x-icon"/> -->
+ <link rel="stylesheet" href=" assets/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href=" assets/admin/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href=" assets/admin/css/font-awesome.min.css">
+<link rel="stylesheet" href=" assets/admin/css/lato/latofonts.css">
+ <link rel="stylesheet" href=" assets/admin/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href=" assets/admin/css/sweetalert.css">
+<link rel="stylesheet" href=" assets/admin/css/jquery-ui.css">
+<link rel="stylesheet" href=" assets/admin/css/style.min.css">   </head>
+   <body>
+      <div class="wrapper">
+      <div class="main-header" data-background-color="purple">
+         <!-- Logo Header -->
+         <div class="logo-header">
+            
+            <a href=" " class="logo">
+               <span class="text-white"><h3 class="navbar-brand" style="color: white"><!-- <img src=" assets/site/images/event.png" style="width: 100px;"> --> ONLINE SERVICE</h3></span>
+            </a>
+            <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <i class="fa fa-bars"></i>
+               </span>
+            </button>
+            <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+            <div class="navbar-minimize">
+               <button class="btn btn-minimize btn-rounded">
+                  <i class="fa fa-bars"></i>
+               </button>
+            </div>
+         </div>
+         <!-- End Logo Header -->
+
+         <!-- Navbar Header -->
+         <nav class="navbar navbar-header navbar-expand-lg">
+            
+            <div class="container-fluid">
+               <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                  <li class="nav-item toggle-nav-search hidden-caret">
+                     <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown hidden-caret">
+                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                        <div class="avatar-sm avatar-online">
+                           <img src=" assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+                     </a>
+                     <ul class="dropdown-menu dropdown-user animated fadeIn">
+                        <li>
+                           <div class="user-box">
+                              <div class="avatar-lg"><img src=" assets/admin/img/unknown.jpg" alt="image profile" class="avatar-img rounded"></div>
+                              <div class="u-text">
+                                 <h4>Balaji S</h4>
+                                 <p>Retailer</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" admin/profile">Profile</a>
+                        </li>
+                        <li>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href=" admin/logout">Logout</a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+               </ul>
+            </div>
+         </nav>
+         <!-- End Navbar -->
+      </div>            <!-- Sidebar -->
+      <div class="sidebar">
+         
+         <div class="sidebar-background"></div>
+         <div class="sidebar-wrapper scrollbar-inner">
+            <div class="sidebar-content">
+               <div class="user">
+                  <div class="avatar-sm float-left mr-2 ">
+                     <img src="assets/admin/img/unknown.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                  <div class="info">
+                     <a data-toggle="collapse" href="javascript:void(0)" aria-expanded="false" class="collapsed">
+                        <span>
+                           Balaji S                           <span class="user-level">Retailer</span>
+                        </span>
+                     </a>
+                     <div class="clearfix"></div>
+                  </div>
+               </div>
+               <ul class="nav">
+                  <li class="nav-item">
+                     <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                     </a>
+                  </li>
+                                                                        <li class="nav-item ">
+                     <a href="services.html">
+                        <i class="far fa-handshake"></i>
+                        <p>Services</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_request.html">
+                        <i class="fas fa-swatchbook"></i>
+                        <p>Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="service_assign.html">
+                        <i class="fas fa-file-export"></i>
+                        <p>Assigned Service Requests</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#e_seva">
+                        <i class="fab fa-edge"></i>
+                        <p>E-Sevai</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="e_seva">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="e_seva_request.html">
+                                 <span class="sub-item">E-Sevai Request</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="e_seva_request_assign.html">
+                                 <span class="sub-item">E-Sevai Assigned Request</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="can_edit_assign.html">
+                        <i class="fas fa-equals"></i>
+                        <p>CAN Edit Assign</p>
+                     </a>
+                  </li>
+                  <!-- <li class="nav-item ">
+                     <a data-toggle="collapse" href="#dmt">
+                        <i class="fas fa-piggy-bank"></i>
+                        <p>DMT</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="dmt">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href=" admin/dmt_remitter">
+                                 <span class="sub-item">Remitters</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/beneficiary">
+                                 <span class="sub-item">Beneficiaries</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href=" admin/transaction">
+                                 <span class="sub-item">Transactions</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href=" admin/bbps">
+                        <i class="far fa-money-bill-alt"></i>
+                        <p>Bill Payment</p>
+                     </a>
+                  </li> -->
+                  <li class="nav-item ">
+                     <a href="shop.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Shop</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="orders.html">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Your Orders</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="notification.html">
+                        <i class="fas fa-comment" aria-hidden="true"></i>
+                        <p>Notifications</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a data-toggle="collapse" href="#wallet">
+                        <i class="fas fa-wallet"></i>
+                        <p>Wallet</p>
+                        <span class="caret"></span>
+                     </a>
+                     <div class="collapse " id="wallet">
+                        <ul class="nav nav-collapse">
+                           <li class="">
+                              <a href="wallet.html">
+                                 <span class="sub-item">Add Balance</span>
+                              </a>
+                           </li>
+                           <li class="">
+                              <a href="wallet_request.html">
+                                 <span class="sub-item">Wallet Requests</span>
+                              </a>
+                           </li>
+                                                   </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="ledger.html">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>Ledger</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="payout.html">
+                        <i class="fas fa-rupee-sign"></i>
+                        <p>Payout</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="tickets.html">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Tickets</p>
+                     </a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="softwares.html">
+                        <i class="fab fa-accusoft"></i>
+                        <p>Softwares</p>
+                     </a>
+                  </li>
+                                 </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar -->      <div class="main-panel">
+         <div class="content">
+            <div class="page-inner">
+               <div class="page-header">
+                  <h4 class="page-title">CAN Edit Assign</h4>
+                  <ul class="breadcrumbs">
+                     <li class="nav-home">
+                        <a href="javascript:void(0)">
+                        <i class="flaticon-home"></i>
+                        </a>
+                     </li>
+                     <li class="separator">
+                        <i class="flaticon-right-arrow"></i>
+                     </li>
+                     <li class="nav-item">
+                        <a href="javascript:void(0)">CAN Edit Assign</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card">
+                        <div class="card-header">
+                           <div class="card-title">CAN Edit Assign</div>
+                           <div class="col-md-12 mt-3">
+                              <div class="row">
+                                 <div class="col-md-2">
+                                    <select class="form-control selectbox_filter" name="status" id="status" onchange="filter_options()">
+                                       <option value="">Status</option>
+                                       <option value="1">Pending</option>
+                                       <option value="2">In-process</option>
+                                       <option value="3">Completed</option>
+                                       <option value="4">Rejected</option>
+                                       <option value="5">Return</option>
+                                    </select>   
+                                 </div>
+                                 <div class="col-md-2">
+                                    <input type="text" name="from" id="from" class="form-control" placeholder="From" readonly onchange="filter_options()">   
+                                 </div>
+                                 <div class="col-md-2">
+                                    <input type="text" name="to" id="to" class="form-control" placeholder="To" readonly onchange="filter_options()">   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-body">
+                           <div class="table-responsive">
+                              <table id="special_service_assign_table" class="display table table-striped table-hover">
+                                 <thead>
+                                    <tr>
+                                       <th>Sno</th>
+                                       <th>Request ID</th>
+                                       <th>Status</th>
+                                       <th>Date</th>
+                                       <th>Action</th>
+                                    </tr>
+                                 </thead>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   
+<script src=" assets/admin/js/plugin/webfont/webfont.min.js"></script>
+
+<!--   Core JS Files   -->
+<script src=" assets/admin/js/core/jquery.3.2.1.min.js"></script>
+<script src=" assets/admin/js/core/jquery.validate.min.js"></script>
+<script src=" assets/admin/js/core/popper.min.js"></script>
+<script src=" assets/admin/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src=" assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src=" assets/admin/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src=" assets/admin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src=" assets/admin/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src=" assets/admin/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src=" assets/admin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src=" assets/admin/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src=" assets/admin/js/plugin/datatables/datatables.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/dataTables.buttons.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/jszip.min.js"></script> 
+<script src=" assets/admin/js/plugin/datatables/pdfmake.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/vfs_fonts.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.html5.min.js"></script>
+<script src=" assets/admin/js/plugin/datatables/buttons.print.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src=" assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src=" assets/admin/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- Bootstrap Tag -->
+<script src=" assets/admin/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstaro Date Picker -->
+<script src=" assets/admin/js/bootstrap-datepicker.min.js"></script>
+<script src=" assets/admin/js/bootstrap-datetimepicker.min.js"></script>
+<script src=" assets/admin/js/moment.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src=" assets/admin/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src=" assets/admin/js/ready.min.js"></script>
+<script src=" assets/admin/js/form_validations.js"></script>
+<script src=" assets/admin/js/ckeditor/ckeditor.js"></script>
+
+<!-- Select2 -->
+<script src=" assets/admin/js/select2.full.min.js"></script>
+<!-- Drop Zone -->
+<!-- <script src=" assets/admin/js/dropzone.min.js"></script>
+<script src="assets/site/js/bootstrap-notify.min.js"></script> -->
+<!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+    }
+  }
+</script> -->
+<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: [" assets/admin/css/fonts.css"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+		$('.selectbox').select2({
+   	  });
+
+	$('.selectbox_filter').select2({
+	   theme: "bootstrap"
+	});
+	</script>
+	<script>
+    </script>
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61c9389dc82c976b71c39e28/1fnt0aanc';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+
+   var assignDataTable = $('#special_service_assign_table').DataTable({
+            'processing': true,
+            'serverSide': true,
+            'serverMethod': 'post',
+            'ajax': {
+             'url':' admin/special_service/specialAssigntList',
+             'data': function(data){
+              var status = $('#status').val();
+              var from = $('#from').val();
+              var to = $('#to').val();
+              data.status = status;
+              data.from = from;
+              data.to = to;
+              },
+            },
+            'order': [[ 0, "desc" ]],
+            'aoColumnDefs': [{
+            'bSortable': false,
+            'aTargets': [-1] /* 1st one, start by the right */
+             }],
+            'columns': [
+               {data: 'assign_request_id'},
+               {data: 'can_edit_refid'},
+               {data: 'assign_request_status'},
+               {data: 'assign_request_added_on'},
+               {data: 'action'},   
+            ],
+            dom: 'Bfrtip',
+              buttons: [
+                  'pageLength',
+                  'excel',
+              ]
+         });
+
+      function confirm_msg(ev)
+      {
+         ev.preventDefault();
+         var url = ev.currentTarget.getAttribute('href')
+       swal({
+        title: "Are you sure?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          window.location.href = url;
+        } 
+      });
+      }
+
+      function confirm_msg_success(ev)
+      {
+         ev.preventDefault();
+         var url = ev.currentTarget.getAttribute('href')
+       swal({
+        title: "Are you sure?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          window.location.href = url;
+        } 
+      });
+      }
+      
+      function filter_options()
+      {
+         assignDataTable.draw();
+      }
+      function service()
+      {
+         var category = $('#category').val();
+         $.ajax({
+        url: " admin/service/select_service",
+        type: "post",
+        data: 'category='+category,
+        success: function (response) {
+         $('#service1').html(response);
+      
+        },
+        
+      });
+      }
+
+      $('#from').datepicker({ 
+         format: 'dd-M-yyyy',
+         todayHighlight: true,
+         autoclose: true
+      });
+      $('#to').datepicker({ 
+         format: 'dd-M-yyyy',
+         todayHighlight: true,
+         autoclose: true
+      });
+   </script>
+</html>
